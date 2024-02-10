@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>VBOIS - Football Club</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/vboislogo.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Welcome to VBOIS 🏴‍☠</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#portfolio">Thrill</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">Player</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead" id="masthead" style="color: #DBB800;">
+        <div class="overlay"></div>
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-0.2" src="assets/vboislogo.png" alt="VBOIS Logo"
+                style="width: 230px; height: auto;" />
+            <div class="divider-custom">
+                <a class="btn btn-outline-light btn-social mx-2" target="_blank"
+                    href="https://www.instagram.com/vboisfc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                    <i class="fab fa-fw fa-instagram"></i>
+                </a>
+            </div>
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0">VBOIS</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">Bond - Enjoy - Respect</p>
+        </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var images = ['assets/img1.jpg', 'assets/img2.jpg', 'assets/img3.jpg']; // Add your image paths here
+            var currentIndex = 0;
+
+            function changeBackground() {
+                $('#masthead').css('background-image', 'url(' + images[currentIndex] + ')');
+                currentIndex = (currentIndex + 1) % images.length;
+            }
+
+            setInterval(changeBackground, 3000); // Change background every 5 seconds (5000 milliseconds)
+        });
+    </script>
+    <!-- About Section-->
+    <section class="page-section bg-third text-white mb-0" id="about">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- About Section Heading-->
+            <img class="masthead-avatar mb-5" src="assets/vboisinvasion.png" alt="..."
+                style="width: 230px; height: auto;" />
+            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lx-8 ms-auto text-center">
+                    <p class="lead">Welcome to VBOIS FC, where passion meets purpose on the football pitch.
+                        Established in 2023, VBOIS FC is more than just a football club – it's a tight-knit
+                        community united by a love for the game and a commitment to our core values: Bond, Respect,
+                        Enjoy. As a young and goofie club, we are committed to making a positive impact, both on
+                        and off the field. Join us as we continue to grow, inspire, and spread the spirit of football
+                        far and wide. Welcome to the VBOIS FC family – where bonds are forged, respect is
+                        earned, and enjoyment is guaranteed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section-->
+    <!-- Portfolio Section-->
+    <section class="page-section bg-primary portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-white mb-0">Moments of <span
+                    style="color: #DBB800;">THRILLS</span></h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="container">
+                <!-- First Row -->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i
+                                        class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/01_result.jpg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i
+                                        class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/02_result.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i
+                                        class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/03_result.png" alt="..." />
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Row -->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i
+                                        class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/04_result.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i
+                                        class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/05_result.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i
+                                        class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/06_result.png" alt="..." />
+                        </div>
+                    </div>
+                </div>
+                <!-- Third Row -->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 7-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i
+                                        class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/07_result.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 8-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal8">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i
+                                        class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/08_result.png" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Player Section-->
+    <section class="page-section bg-black player" id="player">
+        <div class="container">
+            <!-- Player Section Heading-->
+            <h2 class="page-section-heading text-center text-white mb-0">Members of <span
+                    style="color: #DBB800;">VBOIS</span></h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Player Grid Items-->
+            <div class="container">
+                <!-- First Row -->
+                <div class="row justify-content-center">
+                    <!-- Player Item 1-->
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="player-item mx-auto">
+                            <div
+                                class="player-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="player-item-caption-content"></div>
+                            </div>
+                            <img class="img-fluid" src="assets/01_player.png" alt="..." />
+                        </div>
+                        <!-- Name -->
+                        <h3 class="text-center text-white mt-3 mb-1">Pie</h3>
+                        <!-- Position -->
+                        <p class="text-center text-white mt-2 mb-0" style="font-style: italic;">Manager / Editor</p>
+                        <!-- Weak Foot -->
+                        <p class="text-center text-white mt-2 mb-0">Weak Foot: <span class="stars">★★★☆☆</span></p>
+                        <!-- Skills Moves -->
+                        <p class="text-center text-white mt-2 mb-0">Skills Moves: <span class="stars">★★★★☆</span></p>
+                    </div>
+                    <!-- Player Item 2-->
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="player-item mx-auto">
+                            <div
+                                class="player-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="player-item-caption-content"></div>
+                            </div>
+                            <img class="img-fluid" src="assets/06_player.png" alt="..." />
+                        </div>
+                        <!-- Name -->
+                        <h3 class="text-center text-white mt-3 mb-1">Pancho</h3>
+                        <!-- Position -->
+                        <p class="text-center text-white mt-2 mb-0" style="font-style: italic;">Goalkeeper</p>
+                    </div>
+                    <!-- Player Item 3-->
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="player-item mx-auto">
+                            <div
+                                class="player-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="player-item-caption-content"></div>
+                            </div>
+                            <img class="img-fluid" src="assets/07_player.png" alt="..." />
+                        </div>
+                        <!-- Name -->
+                        <h3 class="text-center text-white mt-3 mb-1">Acey</h3>
+                        <!-- Position -->
+                        <p class="text-center text-white mt-2 mb-0" style="font-style: italic;">Goalkeeper / Defender
+                        </p>
+                    </div>
+                    <!-- Player Item 4-->
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="player-item mx-auto">
+                            <div
+                                class="player-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="player-item-caption-content"></div>
+                            </div>
+                            <img class="img-fluid" src="assets/04_player.png" alt="..." />
+                        </div>
+                        <!-- Name -->
+                        <h3 class="text-center text-white mt-3 mb-1">Acap</h3>
+                        <!-- Position -->
+                        <p class="text-center text-white mt-2 mb-0" style="font-style: italic;">Defender</p>
+                    </div>
+                </div>
+                <!-- Second Row -->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="player-item mx-auto">
+                            <div
+                                class="player-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="player-item-caption-content"></div>
+                            </div>
+                            <img class="img-fluid" src="assets/05_player.png" alt="..." />
+                        </div>
+                        <!-- Name -->
+                        <h3 class="text-center text-white mt-3 mb-1">Tok Aba</h3>
+                        <!-- Position -->
+                        <p class="text-center text-white mt-2 mb-0" style="font-style: italic;">Defender</p>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="player-item mx-auto">
+                            <div
+                                class="player-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="player-item-caption-content"></div>
+                            </div>
+                            <img class="img-fluid" src="assets/02_player.png" alt="..." />
+                        </div>
+                        <!-- Name -->
+                        <h3 class="text-center text-white mt-3 mb-1">Atai</h3>
+                        <!-- Position -->
+                        <p class="text-center text-white mt-2 mb-0" style="font-style: italic;">Defender</p>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="player-item mx-auto">
+                            <div
+                                class="player-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="player-item-caption-content"></div>
+                            </div>
+                            <img class="img-fluid" src="assets/02_player.png" alt="..." />
+                        </div>
+                        <!-- Name -->
+                        <h3 class="text-center text-white mt-3 mb-1">Syuk</h3>
+                        <!-- Position -->
+                        <p class="text-center text-white mt-2 mb-0" style="font-style: italic;">Defender</p>
+                    </div>
+                </div>
+                <!-- Add more rows as needed -->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="player-item mx-auto">
+                            <div
+                                class="player-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="player-item-caption-content"></div>
+                            </div>
+                            <img class="img-fluid" src="assets/05_player.png" alt="..." />
+                        </div>
+                        <!-- Name -->
+                        <h3 class="text-center text-white mt-3 mb-1">Nabil</h3>
+                        <!-- Position -->
+                        <p class="text-center text-white mt-2 mb-0" style="font-style: italic;">Defender</p>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="player-item mx-auto">
+                            <div
+                                class="player-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="player-item-caption-content"></div>
+                            </div>
+                            <img class="img-fluid" src="assets/02_player.png" alt="..." />
+                        </div>
+                        <!-- Name -->
+                        <h3 class="text-center text-white mt-3 mb-1">Mancup</h3>
+                        <!-- Position -->
+                        <p class="text-center text-white mt-2 mb-0" style="font-style: italic;">Defender</p>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="player-item mx-auto">
+                            <div
+                                class="player-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="player-item-caption-content"></div>
+                            </div>
+                            <img class="img-fluid" src="assets/02_player.png" alt="..." />
+                        </div>
+                        <!-- Name -->
+                        <h3 class="text-center text-white mt-3 mb-1">Ajim</h3>
+                        <!-- Position -->
+                        <p class="text-center text-white mt-2 mb-0" style="font-style: italic;">Defender</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="footer bg-secondary text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Lokasi</h4>
+                    <p class="lead mb-0">
+                        Kg Jijan Represent
+                        <br />
+                        71800, Nilai, N9
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Contact Kami</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" target="_blank"
+                        href="https://www.instagram.com/vboisfc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+                            class="fab fa-fw fa-instagram"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">SAJE NAK KOBA</h4>
+                    <p class="lead mb-0">
+                        PIE DAK SALAK TINGGI TU BINGAI.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; VBOISFC2023</small></div>
+    </div>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">VBOIS FC VS KEPENG
+                                    FC</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/01_result.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">A Perfect Ending to the Season! 🎉⚽ We clinched a remarkable 3-0 victory
+                                    in our
+                                    last game of 2023 against Kepeng FC! These are the faces of three different scorers
+                                    and three
+                                    different assists - teamwork at its finest! 🏆🔥#val3dbois
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">VBOIS FC VS ZEALOUS
+                                    FC</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/02_result.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">A Tough Day on the Pitch ☀️⚽ Despite the odds stacked against us
+                                    - only 10 players confirmed on matchday morning, a new 3 PM kickoff -
+                                    we fought valiantly. The heartbreak came just before the final whistle with Zealous
+                                    FC
+                                    scoring in the last minute. We'll regroup and come back stronger! 💪🏟️
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">VBOIS FC VS
+                                    PASUM.23</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/03_result.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">An intense battle ended in a 1-1 draw against Pasum 23.
+                                    Lionel Piy's early goal set the tone, but we slipped up in the closing
+                                    moments due to our own mistakes. Lessons learned.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">VBOIS FC VS MN9.FC
+                                </h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/04_result.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Victory at UM Park! 🎉⚽ We triumphed 2-1 in the 'Kuala Lumpur Invasion
+                                    Vol 4' match.
+                                    Amir Faris silenced the doubts by scoring our first goal, proving his mettle on the
+                                    field. Teamwork
+                                    and determination brought us this win! 💪🏟️ #KLinvasionVol4
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 5-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">VALED DERBY</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/05_result.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">
+                                    Valeds belongs to us! 🏆⚽️ When the going got tough, we got tougher! 🔥
+                                    From 2-0 to 2-2, it was an intense battle. But Aiman's late-game heroics delivered
+                                    us a spectacular 3-2 triumph! This is what dreams are made of! 🌟💪 #derv;
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 6-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">VBOIS FC VS XTROZ
+                                    FC</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/06_result.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">A rollercoaster of emotions on the pitch today! 🎢⚽️
+                                    We soared high with two stunning goals, but some late hiccups
+                                    cost us the draw. Lessons learned, resilience strengthened.
+                                    We'll bounce back stronger! 💪🔥 #val3dbois
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 7-->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">VBOIS FC VS PASUM
+                                </h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/07_result.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Victory tastes sweet on foreign turf! 🥳⚽ Our team secured a thrilling
+                                    1-0 win 🔥#val3dbois
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 8-->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal8"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">VBOIS FC VS CEDRIX
+                                    FC</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/08_result.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Scoreboard doesn't define the bond we share on and off the field.
+                                    Grateful for this team and the friendships we've built since 2015. Can't wait
+                                    to keep pushing each other to new heights. #football #BondEnjoyRespect #val3dbois
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
