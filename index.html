@@ -236,24 +236,61 @@
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <div class="container">
-                <div class="carouselpq">
-                    <div><img src="assets/team-logo1.png" alt="VBOIS 1"></div>
-                    <div><img src="assets/team-logo2.png" alt="VBOIS 2"></div>
-                    <div><img src="assets/team-logo1.png" alt="VBOIS 3"></div>
-                </div>
+            <div class="carouselpq">
+                <ul class="carouselpq__list">
+                    <li class="carouselpq__item" data-pos="-2"></li>
+                    <li class="carouselpq__item" data-pos="-1"></li>
+                    <li class="carouselpq__item" data-pos="0"></li>
+                    <li class="carouselpq__item" data-pos="1"></li>
+                    <li class="carouselpq__item" data-pos="2"></li>
+                </ul>
             </div>
         </div>
     </section>
     <script>
-        let index = 0;
-        setInterval(() => {
-            const carouselpq = document.querySelector('.carouselpq');
-            const children = Array.from(carouselpq.children);
-            children[index].style.transform = 'translateX(-100%)';
-            index = (index + 1) % children.length;
-            children[index].style.transform = 'translateX(0)';
-        }, 2000);
+        const state = {};
+        const carouselpqList = document.querySelector('.carouselpq__list');
+        const carouselpqItems = document.querySelectorAll('.carouselpq__item');
+        const elems = Array.from(carouselpqItems);
+
+        carouselpqList.addEventListener('click', function (event) {
+            var newActive = event.target;
+            var isItem = newActive.closest('.carouselpq__item');
+
+            if (!isItem || newActive.classList.contains('carouselpq__item_active')) {
+                return;
+            };
+
+            update(newActive);
+        });
+
+        const update = function (newActive) {
+            const newActivePos = newActive.dataset.pos;
+
+            const current = elems.find((elem) => elem.dataset.pos == 0);
+            const prev = elems.find((elem) => elem.dataset.pos == -1);
+            const next = elems.find((elem) => elem.dataset.pos == 1);
+            const first = elems.find((elem) => elem.dataset.pos == -2);
+            const last = elems.find((elem) => elem.dataset.pos == 2);
+
+            current.classList.remove('carouselpq__item_active');
+
+            [current, prev, next, first, last].forEach(item => {
+                var itemPos = item.dataset.pos;
+
+                item.dataset.pos = getPos(itemPos, newActivePos)
+            });
+        };
+
+        const getPos = function (current, active) {
+            const diff = current - active;
+
+            if (Math.abs(current - active) > 2) {
+                return -current
+            }
+
+            return diff;
+        }
     </script>
     <!-- Player Section-->
     <section class="page-section bg-black player" id="player">
