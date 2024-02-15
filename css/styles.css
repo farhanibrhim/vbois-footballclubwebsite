@@ -12982,3 +12982,20 @@ html {
   margin-right: 2px;
   /* Adjust spacing between stars */
 }
+
+.carouselpq {
+  display: flex;
+  overflow: hidden;
+  width: 400px;
+  height: 450px;
+}
+
+.carouselpq div {
+  width: 400px;
+  height: 450px;
+  transition: transform 0.5s;
+}
+
+.carouselpq div:not(:first-child) {
+  display: none;
+}
